@@ -10,6 +10,10 @@
     background-image: url(photos/staircase.jpg);
     background-size: cover;
     width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 60vh;
 }
 
 *{
@@ -26,4 +30,29 @@ body{
 .logo-image{
     max-width: 100%;
     max-height: 100%;
+}
+
+.logo-container{
+    height: 15vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-text{
+    color: white;
+    font-family: 'norsebold', 'Roboto', sans-serif;
+    font-size: 80px;
+}
+
+.photo-credit,
+.photo-credit > a{
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 100;
 }
