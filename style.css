@@ -6,10 +6,17 @@
     font-style: normal;
 }
 
+:root{
+    --default-input-border-color: #E5E7EB;
+    --accent-color: #ffc4d8;
+    --off-white: #fbfbfb;
+    --input-width: clamp(100px, 25vw, 200px);
+}
+
 .left-section{
     background-image: url(photos/staircase.jpg);
     background-size: cover;
-    width: 35vw;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -25,6 +32,8 @@
 body{
     display: flex;
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.3;
 }
 
 .logo-image{
@@ -60,5 +69,72 @@ body{
 /* RIGHT SECTION */
 
 .right-section{
-    flex: 1;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+    background-color: var(--off-white);
+}
+
+input,
+button{
+    font-family: inherit;
+    font-size: 100%;
+    width: var(--input-width);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    font-size: 1.4rem;
+    width: clamp(200px, 45vw, 800px);
+    margin-left: 20px;
+}
+
+form .input-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-right: 3vw;
+    margin-bottom: 1vw;
+}
+
+form .input-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((var(--input-width) * 2) + 6vw);
+    margin-bottom: 3vh;
+    margin-left: 20px;
+}
+
+form label{
+    font-size: .7rem;
+}
+
+.form-container{
+    background-color: white;
+    width: 100%;
+    margin-bottom: 4vh;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+form h2{
+    margin: 2vh 0 2vh 20px;
+    color: var(--accent-color);
+}
+
+form button{
+    margin-left: 20px;
+    color: var(--off-white);
+    background-color: var(--accent-color);
+    border: none;
+    padding: 1vh 0;
+    border-radius: .5rem;
+}
+
+.right-section .login-span{
+    margin-left: 20px;
 }
