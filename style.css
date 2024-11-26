@@ -14,6 +14,7 @@
     flex-direction: column;
     justify-content: flex-end;
     gap: 60vh;
+    flex-shrink: 0;
 }
 
 *{
@@ -55,4 +56,10 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
     font-weight: 100;
+}
+
+/* RIGHT SECTION */
+
+.right-section{
+    
 }
