@@ -77,10 +77,9 @@ body{
     background-color: var(--off-white);
 }
 
-input,
-button{
+input{
     font-family: inherit;
-    font-size: 100%;
+    font-size: 85%;
     width: var(--input-width);
 }
 
@@ -99,7 +98,7 @@ form .input-wrapper{
     display: flex;
     flex-direction: column;
     margin-right: 3vw;
-    margin-bottom: 1vw;
+    margin-bottom: 2vh;
 }
 
 form .input-container{
@@ -115,6 +114,7 @@ form label{
     color: rgba(0, 0, 0, 0.5);
     font-weight: 600;
     letter-spacing: .05rem;
+    margin-bottom: 4px;
 }
 
 .form-container{
@@ -130,6 +130,9 @@ form h2{
 }
 
 form button{
+    font-family: inherit;
+    width: calc(var(--input-width) * .7);
+    font-size: 100%;
     margin-left: 20px;
     color: var(--off-white);
     background-color: var(--accent-color);
@@ -159,6 +162,7 @@ form button:hover{
 form input{
     border: 1px solid rgba(0, 0, 0, 0.14);
     padding: 3px;
+    border-radius: .2rem;
 }
 
 form input[type="password"]:invalid{
