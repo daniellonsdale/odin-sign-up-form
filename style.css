@@ -91,7 +91,7 @@ form{
 
 header{
     font-size: 1.4rem;
-    width: clamp(200px, 45vw, 800px);
+    width: clamp(200px, 55vw, 800px);
     margin-left: 20px;
 }
 
@@ -112,6 +112,9 @@ form .input-container{
 
 form label{
     font-size: .7rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    letter-spacing: .05rem;
 }
 
 .form-container{
@@ -135,6 +138,35 @@ form button{
     border-radius: .5rem;
 }
 
+form button:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    cursor: pointer;
+}
+
 .right-section .login-span{
     margin-left: 20px;
+}
+
+.login-span a{
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.login-span a:hover{
+    font-weight: 550;
+}
+
+form input{
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    padding: 3px;
+}
+
+form input[type="password"]:invalid{
+    border-color: red;
+}
+
+form input:focus{
+    outline: none;
+    border: 1px solid rgb(90, 140, 255);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
